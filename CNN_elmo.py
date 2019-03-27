@@ -89,7 +89,7 @@ def conv1d_BN(max_len, embed_size):
     :return: CNN with BN model
     '''
     filter_sizes = [2, 3, 4, 5, 6]
-    num_filters = 128
+    num_filters = 512
     inputs = Input(shape=(max_len,embed_size), dtype='float32')
     conv_0 = Conv1D(num_filters, kernel_size=(filter_sizes[0]))(inputs)
     act_0 = Activation('relu')(conv_0)
