@@ -49,7 +49,7 @@ def conv1d(max_len, embed_size):
     :return: CNN without BN model
     '''
     filter_sizes = [2, 3, 4, 5, 6]
-    num_filters = 128
+    num_filters = 512
     drop = 0.5
     inputs = Input(shape=(max_len,embed_size), dtype='float32')
 
